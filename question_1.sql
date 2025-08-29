@@ -8,7 +8,7 @@ WITH added_prev_year AS(
 	FROM t_marek_prochazka_project_SQL_primary_final mt
 	WHERE row_type = 'industry'
 ),
-salary_trend as(
+salary_trend AS (
 	SELECT
 		year,
 		industry,
@@ -43,3 +43,4 @@ FROM (
 	GROUP BY industry
 )
 ORDER BY trend_obdobi DESC, odvetvi;
+
