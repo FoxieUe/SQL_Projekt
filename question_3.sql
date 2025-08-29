@@ -35,3 +35,4 @@ HAVING COUNT(*) >= 6
 ORDER BY prumerny_mezirociny_narust ASC
 LIMIT 1;
 
+
