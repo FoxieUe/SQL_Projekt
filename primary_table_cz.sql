@@ -57,4 +57,5 @@ FROM avg_wage
 WHERE year IN (
 	SELECT
 		year
-	FROM common_years);
+	FROM common_years
+);
