@@ -50,8 +50,9 @@ Některá odvětví vykazují růst ve všech letech.
 
 ### 2\. Kolik je možné si koupit litrů mléka a kilogramů chleba za první a poslední srovnatelné období?
 
-Dotaz SQL porovnává průměrnou mzdu s cenami mléka a chleba v prvním a posledním roce roce a to přesnějí \**2006* a **2018**.
-Výsledek ukazuje, že za průměrnou mzdu si lze koupit výrazně více kusů než v počátečním období.
+Dotaz SQL porovnává průměrnou mzdu s cenami mléka a chleba v prvním a posledním roce roce **(2006 a 2018)**.
+Výsledek ukazuje, že v roce 2006 bylo možné si za průměrnou mzdu koupit přibližně **1313 ks chleba** a **1466 litrů mléka**, zatímco v roce 2018 přibližně **1365 ks chleba** a **1670 litrů mléka**.
+To ukazuje, že si lidé mohli v roce 2018 dovolit za průměrnou mzdu více chleba a mléka než v roce 2006.
 
 
 
@@ -82,4 +83,5 @@ Naopak oproti tomu například rok **2013** HDP **stagnovalo** a mzdy dokonce **
   * **na konci sloupce** když používáme **LEAD()**, protože není následující hodnota
 
 * **Průměrnou mzdu** a **průměrnou cenu potravin** počítáme z dostupných tabulek za pomocí funkce **AVG()** .
+
 
