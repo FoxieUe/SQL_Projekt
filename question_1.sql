@@ -5,7 +5,7 @@ WITH added_prev_year AS(
 		industry,
 		avg_salary,
 		lag(avg_salary) OVER (PARTITION by industry ORDER BY year) AS previous_year
-	FROM t_marek_prochazka_project_SQL_primary_final mt
+	FROM t_marek_prochazka_project_SQL_primary_final
 	WHERE row_type = 'industry'
 ),
 salary_trend AS (
@@ -43,4 +43,5 @@ FROM (
 	GROUP BY industry
 )
 ORDER BY trend_obdobi DESC, odvetvi;
+
 
