@@ -6,7 +6,7 @@ WITH prices_lag AS (
 		avg_price,
 		lag(avg_price) OVER ( PARTITION BY item ORDER BY year) AS previous_price,
 		LAG(year) OVER (PARTITION BY item ORDER BY year) AS previous_year
-	FROM t_marek_prochazka_project_sql_primary_final tmppspf
+	FROM t_marek_prochazka_project_sql_primary_final
 	WHERE row_type = 'category'
 ),
 prices_lag_p AS (
@@ -34,5 +34,6 @@ GROUP BY item
 HAVING COUNT(*) >= 6
 ORDER BY prumerny_mezirociny_narust ASC
 LIMIT 1;
+
 
 
