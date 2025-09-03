@@ -3,7 +3,7 @@ WITH salary_year AS (
 	SELECT
 		year,
 		avg(avg_salary) AS avg_salary_year
-	FROM t_marek_prochazka_project_sql_primary_final tmppspf
+	FROM t_marek_prochazka_project_sql_primary_final
 	WHERE row_type = 'industry'
 	GROUP BY year
 ),
@@ -11,7 +11,7 @@ food_year AS (
 	SELECT
 		year,
 		avg(avg_price) AS avg_food_price
-	FROM t_marek_prochazka_project_sql_primary_final tmppspf
+	FROM t_marek_prochazka_project_sql_primary_final
 	WHERE row_type = 'category'
 	GROUP BY year
 ),
@@ -46,3 +46,4 @@ SELECT
 	END AS vic_nez_o_10
 	FROM yoy
 ORDER BY rok, mezirocni_rozdil DESC;
+
